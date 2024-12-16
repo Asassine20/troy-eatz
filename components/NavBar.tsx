@@ -10,18 +10,10 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import { Dialog, DialogClose } from "@radix-ui/react-dialog"
 import Image from "next/image"
 import Link from "next/link"
 import * as React from "react"
-import { GiHamburgerMenu } from "react-icons/gi"
-import { ModeToggle } from "./ModeToggle"
-import { SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
-import { Button } from "./ui/button"
-import { Popover, PopoverTrigger, PopoverContent } from "@radix-ui/react-popover"
 
-const components: { title: string; href: string; description: string }[] = [
-]
 
 export function NavBar() {
 
@@ -35,8 +27,51 @@ export function NavBar() {
                     <Link href="/">
                         <Image src="https://vngdsgitgimaumyqaatn.supabase.co/storage/v1/object/public/images/TBF.webp" width={50} height={50} alt="logo" />
                     </Link>
+                    <NavigationMenuItem>
+                        <Link
+                            href="https://www.google.com/search?gl=US&tbm=shop&sfm=ChoIvOyQixQQvevJ48a06uZOOJPS4fn0uoCACBgBIAs%3D&lsf=seller:5392053820,store:5678381228843234749,store_mid:576462776562116883&sts=11&q=gum,+candy+%26+chocolate&tbs=vw:g&sa=X&ved=2ahUKEwj834HNiK2KAxULGAoDHXJeEvQQz5oGegQIAhAH"
+                            legacyBehavior
+                            passHref
+                        >
+                            <NavigationMenuLink
+                                className={navigationMenuTriggerStyle()}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Products
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link
+                            href="https://www.doordash.com/store/troy-eatz-troy-29736891/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJ0cm95IGVhdHoiLCJpdGVtX2lkcyI6W10sInNlYXJjaF90ZXJtIjoidHJveSBlYXR6IiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxLDQsMTc3LDE5MywxOTVdfQ==&pickup=false"
+                            legacyBehavior
+                            passHref
+                        >
+                            <NavigationMenuLink
+                                className={navigationMenuTriggerStyle()}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                DoorDash
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
 
-
+                    <NavigationMenuItem>
+                        <Link href="https://www.michiganlottery.com/" 
+                            legacyBehavior 
+                            passHref 
+                            className="cursor-pointer">
+                            <NavigationMenuLink
+                                className={navigationMenuTriggerStyle()}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >                                
+                            Lottery
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
                     <NavigationMenuItem>
                         <Link href="/about" legacyBehavior passHref className="cursor-pointer">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -47,7 +82,6 @@ export function NavBar() {
                 </NavigationMenuList>
             </NavigationMenu>
             <div className="flex items-center gap-3">
-                <ModeToggle />
             </div>
         </div>
 

@@ -16,35 +16,13 @@ const Footer = ({ }) => {
                     <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                         <li>
                             <a
-                                href="https://www.youtube.com/@tsegabiblefellowshipchurch"
-                                rel="noreferrer"
-                                target="_blank"
-                                className="transition hover:opacity-75"
-                            >
-                                <span className="sr-only">YouTube</span>
-                                <BsYoutube />
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.instagram.com/tbfchurch/"
+                                href="https://www.instagram.com/raniya_abro/"
                                 rel="noreferrer"
                                 target="_blank"
                                 className="transition hover:opacity-75"
                             >
                                 <span className="sr-only">Instagram</span>
                                 <SiInstagram />
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.tiktok.com/@tbfchurch"
-                                rel="noreferrer"
-                                target="_blank"
-                                className="transition hover:opacity-75"
-                            >
-                                <span className="sr-only">Tiktok</span>
-                                <FaTiktok />
                             </a>
                         </li>
                     </ul>
@@ -54,9 +32,22 @@ const Footer = ({ }) => {
                 
                     <div>
                         <p className="font-medium">Helpful Links</p>
-
                         <ul className="mt-6 space-y-4 text-sm">
-
+                            <li>
+                                <a target="_blank" href="https://www.doordash.com/store/troy-eatz-troy-29736891/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJ0cm95IGVhdHoiLCJpdGVtX2lkcyI6W10sInNlYXJjaF90ZXJtIjoidHJveSBlYXR6IiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxLDQsMTc3LDE5MywxOTVdfQ==&pickup=false" className=" transition hover:opacity-75">
+                                    DoorDash
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.google.com/search?gl=US&tbm=shop&sfm=ChoIvOyQixQQvevJ48a06uZOOJPS4fn0uoCACBgBIAs%3D&lsf=seller:5392053820,store:5678381228843234749,store_mid:576462776562116883&sts=11&q=gum,+candy+%26+chocolate&tbs=vw:g&sa=X&ved=2ahUKEwj834HNiK2KAxULGAoDHXJeEvQQz5oGegQIAhAH" className=" transition hover:opacity-75">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a target ="_blank" href="https://www.michiganlottery.com/" className=" transition hover:opacity-75">
+                                    Lottery
+                                </a>
+                            </li>
                             <li>
                                 <a href="/about" className=" transition hover:opacity-75">
                                     About Us
@@ -68,8 +59,9 @@ const Footer = ({ }) => {
                         <p className="font-medium">Located At</p>
                         <ul className="mt-6 space-y-4 text-sm">
                             <li>
-                                888 W Big Beaver Rd #112.<br></br>
-                                Troy, MI 48084
+                                888 W Big Beaver Rd #112<br></br>
+                                Troy, MI 48084<br></br>
+                                <small>*Inside Trion Building</small>
                             </li>
 
                         </ul>
@@ -82,7 +74,7 @@ const Footer = ({ }) => {
                     </p>
                     <Link href="https://www.exoduslabs.xyz" target='_blank'>
                         <p className="text-xs text-gray-500">
-                            Built by <span className='font-bold hover:underline hover:underline-offset-1'>Exodus Labs</span>.
+                            Built by <span className='font-bold hover:underline hover:underline-offset-1'>Andrew Sassine</span>.
                         </p>
                     </Link>
                 </div>
