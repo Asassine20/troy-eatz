@@ -35,8 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Sentry Auth Token
-.sentryclirc
-
 # Google information
 app/layout.tsx
