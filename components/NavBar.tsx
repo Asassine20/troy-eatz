@@ -25,7 +25,7 @@ export function NavBar() {
             <NavigationMenu>
                 <NavigationMenuList className="max-[825px]:hidden ">
                     <Link href="/">
-                        <Image src="https://vngdsgitgimaumyqaatn.supabase.co/storage/v1/object/public/images/TBF.webp" width={50} height={50} alt="logo" />
+                        <Image src="https://utfs.io/f/7LRLp6c9mzQV3JxiYnksejPmg8NLUXJTqSay4tD6cEIMBY2Z" width={100} height={50} alt="logo" />
                     </Link>
                     <NavigationMenuItem>
                         <Link

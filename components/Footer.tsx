@@ -11,7 +11,7 @@ const Footer = ({ }) => {
             <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <div className="text-teal-600">
-                        <Image src="https://vngdsgitgimaumyqaatn.supabase.co/storage/v1/object/public/images/TBF.webp" width={50} height={50} alt="logo" />
+                        <Image src="https://utfs.io/f/7LRLp6c9mzQV3JxiYnksejPmg8NLUXJTqSay4tD6cEIMBY2Z" width={100} height={50} alt="logo" />
                     </div>
                     <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                         <li>
@@ -72,7 +72,7 @@ const Footer = ({ }) => {
                     <p className="text-xs text-gray-500">
                         &copy; 2025. Troy Eatz. All rights reserved.
                     </p>
-                    <Link href="https://www.exoduslabs.xyz" target='_blank'>
+                    <Link href="#" target='_blank'>
                         <p className="text-xs text-gray-500">
                             Built by <span className='font-bold hover:underline hover:underline-offset-1'>Andrew Sassine</span>.
                         </p>

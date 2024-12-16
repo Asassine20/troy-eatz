@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         "/user-profile",
       ],
     },
-    sitemap: "https://tsegabiblechurch.com/sitemap.xml",
+    sitemap: "https://troyeatz.com/sitemap.xml",
   };
 }

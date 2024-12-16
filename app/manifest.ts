@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Grace Bible Fellowship Church',
-    short_name: 'Grace Bible Fellowship Church',
-    description: 'Grow In Grace. Grow In Knowledge',
+    name: 'Troy Eatz Convenience Store',
+    short_name: 'Troy Eatz Convenience Store',
+    description: 'Stop by for the best snacks, drinks, and lottery.',
     start_url: '/',
     display: 'standalone',
     background_color: '#020912',

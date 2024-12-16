@@ -22,8 +22,8 @@ module.exports = withPlausibleProxy()(withSentryConfig(
 
     // Suppresses source map uploading logs during build
     silent: true,
-    org: "exodus-labs",
-    project: "grace-bible-church",
+    org: "Andrew Sassine",
+    project: "Troy Eatz",
   },
   {
     // For all available options, see:
