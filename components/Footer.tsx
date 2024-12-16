@@ -50,63 +50,12 @@ const Footer = ({ }) => {
                     </ul>
                 </div>
                 <div className="grid grid-cols-1 gap-8 border-t light:border-gray-900 dark:border-gray-700 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
-                    <div>
-                        <p className="font-medium">Ministry</p>
-                        <ul className="mt-6 space-y-4 text-sm">
-                            <li>
-                                <a href="/faith" className=" transition hover:opacity-75">
-                                    Statement of Faith
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/english-ministry" className=" transition hover:opacity-75">
-                                    English Ministry
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/amharic-ministry" className=" transition hover:opacity-75">
-                                    Amharic Ministry
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p className="font-medium">Resources</p>
-                        <ul className="mt-6 space-y-4 text-sm">
-                            <li>
-                                <a href="/resources/blog" className=" transition hover:opacity-75">
-                                    Blog
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="/coming-soon" className=" transition hover:opacity-75">
-                                    Courses
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="/bible-study" className=" transition hover:opacity-75">
-                                    Bible Study Tool
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
+                
                     <div>
                         <p className="font-medium">Helpful Links</p>
 
                         <ul className="mt-6 space-y-4 text-sm">
-                            <li>
-                                <a href="/give" className=" transition hover:opacity-75">
-                                    Give
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="/contact-us" className=" transition hover:opacity-75">
-                                    Contact Us
-                                </a>
-                            </li>
 
                             <li>
                                 <a href="/about" className=" transition hover:opacity-75">
@@ -116,30 +65,20 @@ const Footer = ({ }) => {
                         </ul>
                     </div>
                     <div>
-                        <p className="font-medium">Next Steps</p>
+                        <p className="font-medium">Located At</p>
                         <ul className="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="/join-us" className=" transition hover:opacity-75">
-                                    Join Our Church
-                                </a>
+                                888 W Big Beaver Rd #112.<br></br>
+                                Troy, MI 48084
                             </li>
-                            {/* <li>
-                                <a href="#" className=" transition hover:opacity-75">
-                                    Cell Groups
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className=" transition hover:opacity-75">
-                                    Baptism
-                                </a>
-                            </li> */}
+
                         </ul>
                     </div>
                 </div>
 
                 <div className='flex flex-col gap-4 justify-between'>
                     <p className="text-xs text-gray-500">
-                        &copy; 2023. Tsega Bible Fellowship Church. All rights reserved.
+                        &copy; 2025. Troy Eatz. All rights reserved.
                     </p>
                     <Link href="https://www.exoduslabs.xyz" target='_blank'>
                         <p className="text-xs text-gray-500">

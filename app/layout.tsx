@@ -2,7 +2,6 @@ import Footer from '@/components/Footer'
 import { NavBar } from '@/components/NavBar'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
-import { ClerkProvider } from '@clerk/nextjs'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -27,7 +26,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
           <Provider>
@@ -46,6 +44,5 @@ export default function RootLayout({
           </Provider>
         </body>
       </html>
-    </ClerkProvider>
   )
 }
