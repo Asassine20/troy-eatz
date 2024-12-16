@@ -26,8 +26,9 @@ const AboutUs = () => {
                     Troy Eatz offers a wide variety of products, from snacks and drinks to lottery tickets and essentials, but what sets us apart is the personal touch that Raniya brings to every aspect of the store. This is more than a place to grab what you need—it’s a community hub where warmth, joy, and convenience come together.
                 </p>
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
-                    We’re proud to serve the vibrant city of Troy and look forward to welcoming you to Troy Eatz. Stop by, say hello, and let us brighten your day!
+                    We&rsquo;re proud to serve the vibrant city of Troy and look forward to welcoming you to Troy Eatz. Stop by, say hello, and let us brighten your day!
                 </p>
+
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
                     <strong>Visit us at:</strong><br />
                     888 W Big Beaver Rd #112, Troy, MI 48084<br />
