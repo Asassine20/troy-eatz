@@ -32,5 +32,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.8,
     },
+    {
+      url: "https://troyeatz.com/snacks",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
+      url: "https://troyeatz.com/drinks",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
+      url: "https://troyeatz.com/vapes",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
   ];
 }
