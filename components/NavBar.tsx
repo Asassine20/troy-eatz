@@ -16,35 +16,30 @@ import * as React from "react"
 
 
 export function NavBar() {
-
-
     return (
         <div className="flex min-w-full justify-between p-2 border-b z-10">
-
-
             <NavigationMenu>
                 <NavigationMenuList className="max-[825px]:hidden ">
                     <Link href="/">
                         <Image src="https://utfs.io/f/7LRLp6c9mzQV3JxiYnksejPmg8NLUXJTqSay4tD6cEIMBY2Z" width={100} height={50} alt="logo" />
                     </Link>
+                    
+                    {/* Products Dropdown */}
                     <NavigationMenuItem>
-                        <Link
-                            href="https://www.google.com/search?gl=US&tbm=shop&sfm=ChoIvOyQixQQvevJ48a06uZOOJPS4fn0uoCACBgBIAs%3D&lsf=seller:5392053820,store:5678381228843234749,store_mid:576462776562116883&sts=11&q=gum,+candy+%26+chocolate&tbs=vw:g&sa=X&ved=2ahUKEwj834HNiK2KAxULGAoDHXJeEvQQz5oGegQIAhAH"
-                            legacyBehavior
-                            passHref
-                        >
-                            <NavigationMenuLink
-                                className={navigationMenuTriggerStyle()}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Products
-                            </NavigationMenuLink>
-                        </Link>
+                        <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[300px]">
+                                <ListItem href="/snacks" title="Snacks">Chips, cookies, candy, and more.</ListItem>
+                                <ListItem href="/drinks" title="Drinks">Energy drinks, coffee, pop, juice.</ListItem>
+                                <ListItem href="/vapes" title="Vapes">Breeze and Mr Vapor.</ListItem>
+                            </ul>
+                        </NavigationMenuContent>
                     </NavigationMenuItem>
+
+                    {/* DoorDash (External Link) */}
                     <NavigationMenuItem>
                         <Link
-                            href="https://www.doordash.com/store/troy-eatz-troy-29736891/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJ0cm95IGVhdHoiLCJpdGVtX2lkcyI6W10sInNlYXJjaF90ZXJtIjoidHJveSBlYXR6IiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxLDQsMTc3LDE5MywxOTVdfQ==&pickup=false"
+                            href="https://www.doordash.com/store/troy-eatz-troy-29736891/"
                             legacyBehavior
                             passHref
                         >
@@ -58,20 +53,17 @@ export function NavBar() {
                         </Link>
                     </NavigationMenuItem>
 
+                    {/* Lottery Dropdown */}
                     <NavigationMenuItem>
-                        <Link href="https://www.michiganlottery.com/" 
-                            legacyBehavior 
-                            passHref 
-                            className="cursor-pointer">
-                            <NavigationMenuLink
-                                className={navigationMenuTriggerStyle()}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >                                
-                            Lottery
-                            </NavigationMenuLink>
-                        </Link>
+                        <NavigationMenuTrigger>Lottery</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[300px]">
+                                <ListItem href="/lottery" title="Lottery">Try your luck with various lottery games.</ListItem>
+                            </ul>
+                        </NavigationMenuContent>
                     </NavigationMenuItem>
+
+                    {/* About Us */}
                     <NavigationMenuItem>
                         <Link href="/about" legacyBehavior passHref className="cursor-pointer">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -81,16 +73,14 @@ export function NavBar() {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-            <div className="flex items-center gap-3">
-            </div>
+            <div className="flex items-center gap-3"></div>
         </div>
-
     )
 }
 
 const ListItem = React.forwardRef<
     React.ElementRef<"a">,
-    React.ComponentPropsWithoutRef<"a">
+    React.ComponentPropsWithoutRef<"a"> & { title: string }
 >(({ className, title, children, ...props }, ref) => {
     return (
         <li>
