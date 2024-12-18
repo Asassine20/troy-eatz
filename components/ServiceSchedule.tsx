@@ -1,17 +1,12 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
 
-
-const ServiceSchedule = ({ }) => {
+const ServiceSchedule = () => {
     return (
         <section className='w-[90%] pt-[rem]'>
-            <div
-                className="py-8 sm:py-12 lg:py-16"
-            >
+            <div className="py-8 sm:py-12 lg:py-16">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                    <div
-                        className="relative h-64 overflow-hidden rounded-lg sm:h-96 lg:order-last lg:h-full"
-                    >
+                    <div className="relative h-64 overflow-hidden rounded-lg sm:h-96 lg:order-last lg:h-full">
                         <Image
                             alt="Party"
                             src="https://utfs.io/f/7LRLp6c9mzQVTUa9Qd2iM15Ie9v43jkDCzZA6GSVyXhRWrPB"
@@ -26,9 +21,8 @@ const ServiceSchedule = ({ }) => {
                                 <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
                                     Our Hours
                                 </h2>
-
                                 <div className="mt-4">
-                                    <a target='_blank' href="https://maps.app.goo.gl/3oBDJ4Ryz8Lm583r6" title=""
+                                    <a target='_blank' href="https://maps.app.goo.gl/3oBDJ4Ryz8Lm583r6" 
                                         className="inline-flex items-center text-lg font-medium text-primary-600 hover:underline dark:text-primary-500">
                                         Visit us at 888 W Big Beaver RD #112, Troy, MI 48084
                                         <svg aria-hidden="true" className="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -43,63 +37,24 @@ const ServiceSchedule = ({ }) => {
 
                             <div className="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
                                 <div className="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Monday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>8 AM - 6 PM</p>
-                                        </h3>
-                                    </div>
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Tuesday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>8 AM - 6 PM</p>
-                                        </h3>
-                                    </div>
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Wednesday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>8 AM - 6 PM</p>
-                                        </h3>
-                                    </div>
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Thursday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>8 AM - 6 PM</p>
-                                        </h3>
-                                    </div>
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Friday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>8 AM - 6 PM</p>
-                                        </h3>
-                                    </div>
-
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Saturday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>Closed</p>
-                                        </h3>
-                                    </div>
-                                    <div className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                                        <p className="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                            Sunday
-                                        </p>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                                            <p>Closed</p>
-                                        </h3>
-                                    </div>
+                                    {[
+                                        { day: 'Monday', hours: '8 AM - 6 PM' },
+                                        { day: 'Tuesday', hours: '8 AM - 6 PM' },
+                                        { day: 'Wednesday', hours: '8 AM - 6 PM' },
+                                        { day: 'Thursday', hours: '8 AM - 6 PM' },
+                                        { day: 'Friday', hours: '8 AM - 6 PM' },
+                                        { day: 'Saturday', hours: 'Closed' },
+                                        { day: 'Sunday', hours: 'Closed' }
+                                    ].map(({ day, hours }, index) => (
+                                        <div key={index} className="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                                            <p className="w-full text-lg font-normal text-gray-500 sm:text-right sm:w-32 dark:text-gray-400 shrink-0">
+                                                {day}
+                                            </p>
+                                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                                {hours}
+                                            </h3>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
