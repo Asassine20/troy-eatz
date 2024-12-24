@@ -72,9 +72,9 @@ const Footer = ({ }) => {
                     <p className="text-xs text-gray-500">
                         &copy; 2025. Troy Eatz. All rights reserved.
                     </p>
-                    <Link href="#" target='_blank'>
+                    <Link href="https://targetrankseo.com" target='_blank'>
                         <p className="text-xs text-gray-500">
-                            Built by <span className='font-bold hover:underline hover:underline-offset-1'>Andrew Sassine</span>.
+                            Web Design & SEO by <span className='font-bold hover:underline hover:underline-offset-1'>Target Rank SEO</span>.
                         </p>
                     </Link>
                 </div>
